@@ -1,0 +1,331 @@
+
+body{
+    font-family: Arial, Helvetica, sans-serif;
+}
+
+.headerBar {
+    background-color: lavender;
+    width: 100%;
+    overflow: hidden;
+    
+}
+
+.headerBar a {
+    float: right;
+    text-align: center;
+    color: black;
+    font-size: 20px;
+    padding: 10px;
+    padding-top: 20px;
+    padding-bottom: 20px;   
+    display: block;
+}
+
+.headerBar a:active {
+    background-color:rgb(195, 146, 195);
+    
+}
+
+.headerBar .icon {
+    display: none;
+}
+
+@media screen and (max-width: 600px) {
+    .headerBar a {display:none}
+    .headerBar a.icon {
+        float: right;
+        display: block;
+    }
+}
+
+@media screen and (max-width: 600px) {
+    .headerBar.responsive {position: relative;}
+    .headerBar.responsive a.icon {
+        position: relative;
+        right: 0;
+        top: 0;
+    }
+}
+
+.headerBar.responsive a {
+    float: center;
+    display: block;
+    text-align: left;
+}
+
+.headerBar a:hover, .dropdown:hover, .ddbutton:hover, .recipes:hover {
+    background-color:rgb(195, 146, 195);
+    color:white;
+}
+
+.headerBar a.page {
+    background-color: #E7B4F6;
+    color:black
+}
+
+.dropdown {
+    float: right;
+    overflow: hidden;
+    
+}
+
+.dropdown .ddbutton {
+    color: black;
+    font-size: 20px;
+    border: none;
+    outline: none;
+    background-color: lavender;
+
+}
+
+.dropdown .ddbuttonMore {
+    color: black;
+    font-size: 20px;
+    padding: 20px;
+    border: none;
+    outline: none;
+    background-color: lavender;
+
+}
+
+
+.recipes {
+    display: none;
+    position: absolute;
+    background-color: lavender;
+    min-width: 100px;
+    
+}
+
+.recipes a {
+    float: none;
+    text-align: left;
+    display: block;
+    padding: 10px;
+    font-size: 12px;
+    color: black;
+}
+
+.dropdown:hover .recipes {
+    display: block;
+    background-color:rgb(195, 146, 195);
+}
+
+.morebaking {
+    display: none;
+    position: absolute;
+    background-color: lavender;
+    min-width: 100px;
+}
+
+
+.morebaking a {
+    float: none;
+    text-align: left;
+    display: block;
+    padding: 10px;
+    font-size: 12px;
+    color: black;
+}
+
+.morebaking:hover, .more:hover{
+    background-color:rgb(195, 146, 195);
+    color:white;
+}
+
+.dropdown:hover .morebaking {
+    display:block;
+    background-color:rgb(195, 146, 195);
+}
+
+.dropdown button:hover {
+    background-color:rgb(195, 146, 195);
+    color:white;
+}
+
+.more{
+    display: none;
+    position: absolute;
+    background-color: lavender;
+    min-width: 100px;
+}
+
+.more a {
+    float: none;
+    text-align: left;
+    display: block;
+    padding: 10px;
+    font-size: 12px;
+    color: black;
+}
+
+.dropdown:hover .more {
+    display:block;
+    background-color:rgb(195, 146, 195);
+}
+
+#logo {
+    width: 80px;
+    height: 80px;
+}
+
+.socials img {
+    max-width: 40px;
+    max-height: 40px;
+}
+
+.socials {
+    float: right;
+    padding-top: 40px;
+}
+
+.footer {
+    background-color: lavender;
+    padding: 10px;
+    text-align: center;
+    margin-top: 5%;
+
+}
+
+.socialsfooter img {
+    max-width: 40px;
+    max-height: 40px;
+}
+
+.title {
+    font-size:50px;
+    text-align:center;
+    color:black;
+    font-family: "Brush Script MT", crusive;
+}
+
+section {
+    text-align: left;
+}
+
+
+.contactUsBody h4, .contactUsBody p {
+    text-align: center;
+}
+
+.contactform {
+    border: 3px solid;
+    border-radius: 5px;
+    border-color: lavender;
+    background-color: lavender;
+    padding: 20px;
+    box-sizing:content-box;
+    width: 450;   
+    margin: auto; 
+}
+
+input[type=submit] {
+    background-color: black;
+    color: white;
+    cursor: pointer;
+    border: none;
+    width: 100px;
+    height: 30px;
+}
+
+input[type=submit]:hover {
+    background-color: grey;
+    color: black;
+
+}
+
+input[type=text] {
+    width:auto;
+    padding: 10px;
+    width: 400px;
+}
+
+textarea {
+    width: 400px;
+    height: 200px;
+}
+
+.picCol {
+    padding: 10px;
+}
+
+.picrow {
+    display: flex;
+    flex-wrap: wrap;
+    background-color: lavender;
+    border-radius: 5px;
+    padding: 10px;
+    box-sizing: content-box;
+    width: fit-content;
+    max-width: 1000px;
+    margin: auto;
+}
+
+.picCol img {
+    vertical-align: middle;
+    width: 200px;
+    height: 200px;
+}
+
+.picCol img:hover {
+    box-shadow: 4px;
+    cursor: pointer;
+}
+
+.picrow::after {
+    display: table;
+}
+
+.about {
+    max-width: 800px;
+    margin: auto;
+    text-align: center justify;
+    text-justify: inter-word;
+}
+
+.recipesBody {
+    background-color: lavender;
+    background-size: auto;
+    border: 3px solid;
+    border-radius: 5px;
+    border-color: lavender;
+    box-sizing: content-box;
+    margin:auto;
+    width: 50%;
+}
+
+.ingredientsMain img {
+    width: 300px;
+    height: 200px;
+    border-radius: 5px;
+}
+
+.ingredientsMain {
+    background-color: lavender;
+    padding: 30px;
+    max-width: 50%;
+    border-radius: 5px;
+    margin: auto;
+}
+
+.ingredientsMain td{
+    text-align: justify;
+    padding: 20px;
+}
+
+.row img {
+    width: 150px;
+    height: 200px;
+    padding: 10px;
+    border-radius: 5px;
+    background-color: lavender;
+    
+}
+
+.row {
+    background-color: lavender;
+    width: 75%;
+    margin: auto;
+    padding: 20px;
+    border-radius: 5px;
+}

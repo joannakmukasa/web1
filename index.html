@@ -1,0 +1,125 @@
+<html>
+<!-- identifing a character set-->
+<meta charset="UFT-8">
+<!-- ensures that the website can be viewed on different device sizes-->
+<meta name="viewport" content=""width=device-width, initial-scale="1">
+
+
+<head>
+<title>My Cupcake Journal</title>
+<link rel="stylesheet" href="styles.css" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+
+</head>
+
+<body>
+    <header>
+        <img src="images/logowhite.jpg" alt="blog logo" id="logo">&nbsp;&nbsp;
+        <div class="socials">
+            <a href="https://www.instagram.com/" target="_blank"><img src="images/instagramlogo.png" alt=""></a>&nbsp;&nbsp;
+            <a href="https://twitter.com/" target="_blank"><img src="images/twitterlogo.png" alt=""></a>&nbsp;&nbsp;
+            <a href="https://www.pinterest.com/" target="_blank"><img src="images/pinterestlogo.png" alt=""></a>
+        </div>
+    </header>
+
+    <nav>
+        <div class="headerBar" id="MyHeaderBar">
+            <a href="contact us.html">Contact Us</a>
+
+           
+
+            <div class="dropdown">
+               <button class="ddButton"><a href="morebaking.html">More Baking</a></button>
+               <div class="morebaking">
+                    <a href="cinnamonrolls.html">Cinnamon Rolls</a>
+                    <a href="brownies.html">Brownies</a>
+               </div>
+            </div>
+            <div class="dropdown">
+                <button class="ddButton"><a href="recipes.html">Recipes</a></button>
+                <div class="recipes">
+                    <a href="vanilla.html">Vanilla</a>
+                    <a href="lemoncupcakes.html">Lemon</a>
+                    <a href="banana.html">Banana</a>
+                </div>
+            </div>
+            <a href="utensils.html">Utensils</a>
+            <a href="ingredients.html">Ingredients</a>
+            <a id="page" href="index.html">Home</a>
+
+            <a href="javascript:void(0);" class="icon" onclick="myFunction"></a>
+        </div>
+    </nav>
+    <script>
+        function myFunction() {
+            var x = document.getElementById("MyHeaderBar");
+            if (x.className === "headerBar") { 
+                x.className += " responsive";
+            }
+            else {
+                x.className = "headerBar"
+            }
+        }
+    </script>
+
+
+
+     <h1 class="title">My Cupcake Journal</h1>
+     <section class="about"> 
+        <p>My name is Joanna and I am a baking enthusiast. 
+        If you can’t already tell, my favourite things to bake are cupcakes. 
+        I am here to share my knowledge on everything baking from the ingredients 
+        you use to the different types of bakeware, as well as tons of recipes. 
+        So without further ado welcome to my cupcake journal!</p>
+     </section>
+    
+    <div class="picrow">
+        <div class="picCol">
+            <a href="ingredients.html">
+                <img src="images/ingredients.jpg" alt="Ingredients" href="ingredients.html">
+            </a>
+        </div>
+
+        <div class="picCol">
+            <a href="utensils.html">
+                <img src="images/utensils" alt="utensils">
+            </a>
+        </div>
+
+        <div class="picCol">
+            <a href="recipes.html">
+                <img src="images/recipes" alt="cupcake recipes" href="recipes.html">
+            </a>
+        </div>
+        <div class="picCol">
+            <a href="morebaking.html">
+                <img src="images/more baking.jpg" alt="more recipes" href="morebaking.html">
+            </a>
+        </div>
+            
+        
+        <div class="picCol">
+            <a href="contact us.html">
+                <img src="images/logosmall.jpg" alt="contact us">
+            </a>
+        </div>
+    </div>
+    
+</body>
+
+<footer>
+    <div class="footer">
+        <a href="index.html">Home</a>
+        <a href="ingredients.html">Ingredients</a>
+        <a href="recipes.html">Recipes</a>
+        <a href="morebaking.html">More Baking</a>
+        <a href="contact us.html">Contact Us</a>
+        <div class="socialsfooter">
+            <a href="https://www.instagram.com/" target="_blank"><img src="images/instagramlogo.png" alt=""></a>&nbsp;
+            <a href="https://twitter.com/" target="_blank"><img src="images/twitterlogo.png" alt=""></a>&nbsp;
+            <a href="https://www.pinterest.com/" target="_blank"><img src="images/pinterestlogo.png" alt=""></a>
+        </div>
+    </div>
+    
+</footer>
+
+</html>
